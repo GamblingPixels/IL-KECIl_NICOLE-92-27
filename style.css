@@ -1,0 +1,283 @@
+**{
+    box-sizing: border-box
+}
+
+body {
+margin: 0;
+background-image: url(download.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: auto; 
+
+}
+
+.header {
+ background-image: url(blueyhead120.png);
+background-color: #f1f1f1;
+padding: 20px;
+text-align: center;
+height: 250px;
+width: 1250px;
+}
+
+ul {
+    list-style: circle;
+    background: #1d0a0a;
+    padding: 0px 0px;
+    margin: 120px 0px;
+    position: fixed;
+    width: 1280px;
+    height:60px
+}
+
+ol{
+  list-style-type: disc;
+}
+
+ul li{
+    display: inline-block;
+    position: relative;
+    height: 60px;
+    padding: 10px 8px;
+}
+
+ul li a{
+    padding: 10px 0px;
+    text-align: center;
+}
+
+ul a:hover{
+    background-color: #320b0b;
+}
+
+ul li ul.dropdown li{
+    display: block;
+}
+
+ul li ul.dropdown {
+    background-color: #5493b9;
+    position:absolute;
+    display: none;
+    width: auto;
+    height: auto;
+    margin: 0px 0px;
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+}
+
+.topnav {
+position: relative;
+  z-index: 1000;
+background-color: #5c90ce;
+display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 20px;
+}
+
+.topnav a {
+color: #f2f2f2;
+  padding: 14px 15px;
+  text-decoration: none;
+  text-align: center;
+  color: #f2f2f2;
+    padding: 14px 15px;
+    transition: all 0.3s ease;
+}
+
+.topnav a:hover {
+background-color: #549cc6;
+color: #549cc6;
+color: #ffffff;
+    background-color: #549cc6;
+    box-shadow: 0 0 10px #ececec, 0 0 20px #ffffff; 
+    transform: scale(1.05); 
+}
+
+.column {
+float: left;
+padding: 10px;
+ }
+
+.column.side {
+width: 25%;
+}
+
+.column.middle {
+width: 50%;
+}
+
+.row::after {
+content: "";
+display: table;
+clear: both;
+}
+
+.footer {
+background-color: #1d0a0a;
+padding: 10px;
+text-align: center;
+}
+
+a:visited{
+color: rgb(0, 0, 0);
+}
+
+            a:hover{
+                color: rgb(255, 255, 255);
+            }
+            
+            a:active{
+                color: rgb(255, 255, 255);
+            }
+
+            a:link{
+                background-color: rgb(108, 147, 184);
+                text-decoration-line: none;
+            }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 1000;
+}
+
+.dropbtn {
+  background-color: #333;
+  border: none;
+  color: white;
+  padding: 14px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  min-width: 160px;
+  background-color: #444;
+  box-shadow: 0px 8px 16px rgb(237, 237, 237);
+  position: absolute;
+    z-index: 2000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+    opacity: 1;
+}
+
+.dropdown-content a:hover {
+  background-color: #555;
+}
+
+.dropimg {
+  width: 100px;      
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 5px; 
+  transition: all 0.3s ease;
+}
+
+.dropimg:hover {
+    filter: drop-shadow(0 0 8px rgb(255, 255, 255)) drop-shadow(0 0 12px rgb(255, 255, 255));
+    transform: scale(1.1);
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+p.col{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgb(89, 126, 171);
+
+}
+
+h2.col{
+    text-align: center;
+    color: rgb(255, 255, 255);
+                background-color: rgb(89, 126, 171);
+}
+
+h3.size{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(89, 126, 171);
+}
+
+.fa-regular fa-house{
+    color: #f1f1f1;
+
+}
+
+#right-video {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40vw;         
+  height: 100vh;        
+  object-fit: cover;
+  z-index: -1;          
+  pointer-events: none; 
+}
+
+.page-layout {
+    display: flex;
+    width: 100%; 
+    gap: 20px;
+}
+
+
+.content-area {
+    flex: 1;
+    padding: 20px;
+}
+
+.video-area {
+    width: 40%;       
+    position: relative;
+    height: max-content;
+    position: sticky;
+    top: 20px;
+    height: 300px;
+    overflow: visible;
+}
+
+.video-area video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: max-content;
+    object-fit: contain;
+    transform: translateY(0);
+    transition: transform 0.1s linear;
+    display:block;
+}
+
+.text-area {
+    flex: 1; 
+}
+
+.img-box {
+  display: flex;
+  justify-content: center;  
+  align-items: center;     
+  height: 300px;           
+}
